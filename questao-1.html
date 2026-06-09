@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WEB II</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <!--Import Google Icon Font-->
+    <link
+      rel="stylesheet"
+      href="http://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/libraries/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/libraries/materialize/css/materialize.css"
+    />
+    <link rel="stylesheet" href="assets/resources/styles/style.css" />
+    <link rel="stylesheet" href="assets/resources/styles/tabuleiro.css" />
+    <style>
+      .amount {
+        font-size: 4em;
+        color: chocolate;
+        font-weight: 500;
+      }
+
+      .title {
+        font-size: 2em;
+        color: black;
+        font-weight: 200;
+      }
+
+      input:invalid {
+        background-color: red !important;
+      }
+    </style>
+
+    <script src="assets/libraries/jquery/jquery-2.2.4.min.js"></script>
+    <script src="assets/libraries/materialize/js/materialize.js"></script>
+    <script src="assets/resources/scripts/common.js"></script>
+
+    <script>
+      $(function () {
+        $("#footer").load("footer.html");
+        $("#menu").load("menu.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="menu"></div>
+    <!-- container -->
+    <main>
+      <div class="container about">
+        <h5 class="">Tabuleiro de Grãos de Trigo</h5>
+        <h6>
+          Quantos grãos cabem até uma casa de um tabuleiro se cada casa possui o
+          dobro de grãos da casa anterior?
+        </h6>
+        <hr />
+        <!-- linha -->
+        <div class="row">
+          <div class="col s12 center">
+            <img
+              src="assets/resources/images/rainha-trigo.png"
+              height="200px"
+            />
+          </div>
+          <div class="col s12 flow-text">
+            <div class="my-panel-content">
+              <p>
+                Uma rainha requisitou os servi&ccedil;os de um monge e disse-lhe
+                que pagaria qualquer pre&ccedil;o. O monge, necessitando de
+                alimentos, perguntou a rainha se o pagamento poderia ser feito
+                em gr&atilde;os de trigo dispostos em um tabuleiro de damas, de
+                forma que o primeiro quadrado tivesse apenas um gr&atilde;o, e
+                os quadrados subsequentes, o dobro do quadrado anterior. A
+                rainha considerou o pagamento barato e pediu que o
+                servi&ccedil;o fosse executado, por&eacute;m, um dos cavaleiros
+                que estava presente e entendia um pouco de matem&aacute;tica
+                alertou-a que seria imposs&iacute;vel executar o pagamento, pois
+                a quantidade de gr&atilde;o seria muito alta. Curiosa, a rainha
+                solicitou ent&atilde;o a este cavaleiro que era bom em
+                c&aacute;lculo e supostamente bom em programa&ccedil;&atilde;o,
+                que fizesse uma aplica&ccedil;&atilde;o em JavaScript para
+                calcular a quantidade de quilos de trigo para qualquer
+                quantidade de casas no tabuleiro. A rainha exigiu que o
+                tabuleiro fosse desenhado na aplica&ccedil;&atilde;o com todas
+                as casas numeradas de 1 a 64. Tamb&eacute;m, ela gostaria que
+                fosse poss&iacute;vel clicar em qualquer casa e visualizar a
+                quantidade de quilos dentro da pr&oacute;pria casa do tabuleiro
+                e tamb&eacute;m em um painel abaixo do tabuleiro. Uma dica
+                importante para que seja poss&iacute;vel realizar o
+                c&aacute;lculo &eacute; que cada 12 gr&atilde;os do trigo
+                correspondem a um grama.
+              </p>
+              <p>
+                Segue a imagem do tabuleiro ap&oacute;s o clique em algumas
+                casas. O campo total de quilos refere-se a &uacute;ltima casa
+                clicada, ou seja, a casa 54 (na qual est&aacute; posicionada o
+                cursor). Note que os valores aparecem abreviados dentro de casa,
+                ou seja, com apenas uma casa decimal ap&oacute;s a
+                v&iacute;rgula e em escalas de mil (k), milh&atilde;o (M),
+                bilh&atilde;o (B) ou trilh&atilde;o (T). &nbsp;
+              </p>
+              <div class="col s12 center">
+                <img src="assets/resources/images/exemplo-tabuleiro.png" />
+              </div>
+              <p>
+                Agora suponha que o cavaleiro delegou esta atividade para
+                voc&ecirc; e pediu para usar JavaScript puro ou em conjunto com
+                JQuery. Uma outra exig&ecirc;ncia dele &eacute; a seguinte: ele
+                pediu para voc&ecirc; criar as casas como div. Por fim, ele lhe
+                desejou boa sorte!
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- fim linha -->
+      </div>
+      <div class="container">
+        <div id="div-container">
+          <p class="center">Desenhar o tabuleiro aqui!!!!</p>
+        </div>
+        <p id="p-total-kilo">
+          <span style="font-size: 2em; display: block">Total de kilos:</span>
+          <span id="span-total-kilo">0</span>
+        </p>
+      </div>
+
+      <!-- fim container -->
+    </main>
+
+    <div id="footer"></div>
+    <script src="assets/resources/scripts/questao-1.js"></script>
+  </body>
+</html>
