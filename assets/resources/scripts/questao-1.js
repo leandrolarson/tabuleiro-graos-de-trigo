@@ -1,0 +1,5 @@
+(function () {
+
+    //TODO código aqui    
+
+})();
