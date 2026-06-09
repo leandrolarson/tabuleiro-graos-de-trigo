@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WEB II</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <!--Import Google Icon Font-->
+    <link
+      rel="stylesheet"
+      href="http://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/libraries/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/libraries/materialize/css/materialize.css"
+    />
+    <link rel="stylesheet" href="assets/resources/styles/style.css" />
+  </head>
+
+  <body>
+    <div id="menu"></div>
+    <!-- intro -->
+    <div class="intro blue darken-1 z-depth-1">
+      <h1 class="grey-text text-lighten-5">Desafio de WEB II</h1>
+      <h5 class="grey lighten-4 grey-text text-darken-1">
+        Prof. Dr. Roni Fabio Banaszewski
+      </h5>
+    </div>
+    <!-- intro -->
+
+    <div class="container about">
+      <div class="row">
+        <!-- primeira coluna -->
+        <div class="col s12">
+          <h4>Questão (0,5)</h4>
+          <div class="card blue lighten-1 flow-text back-cup-blue">
+            <div class="card-content white-text my-panel-content container">
+              <a href="questao-1.html" class="white-text center">
+                <h3>Tabuleiro de Grãos de Trigo</h3>
+              </a>
+
+              <div class="col s12 center">
+                <img
+                  src="assets/resources/images/rainha-trigo.png"
+                  height="200px"
+                />
+              </div>
+
+              <div class="row">
+                <div class="col s12 center">
+                  <a
+                    class="waves-effect waves-light btn-large blue darken-4"
+                    href="questao-1.html"
+                    >Ver</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- primeira coluna -->
+      </div>
+      <!-- fim linha -->
+    </div>
+    <!-- fim container -->
+
+    <div id="footer"></div>
+    <script src="assets/libraries/jquery/jquery-2.2.4.min.js"></script>
+    <script src="assets/libraries/materialize/js/materialize.js"></script>
+    <script src="assets/resources/scripts/index.js"></script>
+
+    <script>
+      $(function () {
+        $('#footer').load('footer.html');
+        $('#menu').load('menu.html');
+      });
+    </script>
+  </body>
+</html>
